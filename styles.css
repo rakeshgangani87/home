@@ -11,6 +11,10 @@
 .project-image.analytics{background:linear-gradient(135deg,#202b2b,#3c5b54)}
 .project-image.migration{background:linear-gradient(135deg,#302a20,#685437)}
 .project-image.magento{background:linear-gradient(135deg,#302329,#653e4c)}
+.project-image img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center;transition:transform .5s ease}
+.project-image.has-image:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.6),rgba(0,0,0,.1) 45%,rgba(0,0,0,.65));z-index:1}
+.project-image span,.project-image strong{position:relative;z-index:2}
+.portfolio-card:hover .project-image img{transform:scale(1.04)}
 .project-content{padding:27px 26px 30px;display:flex;flex-direction:column;flex:1}
 .project-type{font-size:10px;letter-spacing:.13em;color:#b6ff31;font-weight:700}
 .project-content h3{font:600 25px/1.12 "Space Grotesk";margin:15px 0 10px}
